@@ -1,0 +1,64 @@
+:root {
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-on-surface: #0b1c30;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-secondary: #bb0112; /* Crimson Accent */
+  --color-on-secondary: #ffffff;
+  --color-background: #ffffff; /* Crisp white surface */
+  --color-outline-variant: #e2e8f0; /* Low-contrast outline from DESIGN.md */
+  --color-outline: #76777d;
+
+  --font-headline: 'Source Serif 4', serif;
+  --font-body: 'Public Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  /* Base font size is body-md */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+/* Typography styles from DESIGN.md */
+.display-lg {
+  font-family: var(--font-headline);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.headline-lg {
+  font-family: var(--font-headline);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.body-lg {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.label-md {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
