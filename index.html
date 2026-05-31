@@ -1,28 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CondoSense Design</title>
-    <!-- Google Fonts for Typography Pairing -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            padding-top: 0;
+<!-- saved from url=(0012)about:srcdoc -->
+<html class="light scroll-smooth" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>CondoSense | Institutional Compliance Auditing</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#ffb4ab",
+                    "surface-container-high": "#dce9ff",
+                    "primary-container": "#131b2e",
+                    "tertiary-container": "#271901",
+                    "surface-tint": "#565e74",
+                    "surface-container-low": "#eff4ff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "surface": "#f8f9ff",
+                    "primary-fixed": "#dae2fd",
+                    "on-secondary-fixed": "#410002",
+                    "surface-variant": "#d3e4fe",
+                    "primary": "#000000",
+                    "secondary-fixed": "#ffdad6",
+                    "inverse-surface": "#213145",
+                    "on-secondary-container": "#fffbff",
+                    "surface-container": "#e5eeff",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-primary-fixed": "#131b2e",
+                    "outline": "#76777d",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#271901",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#e02928",
+                    "tertiary": "#000000",
+                    "surface-dim": "#cbdbf5",
+                    "background": "#f8f9ff",
+                    "surface-bright": "#f8f9ff",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary-container": "#7c839b",
+                    "on-error": "#ffffff",
+                    "on-background": "#0b1c30",
+                    "on-surface-variant": "#45464d",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-surface": "#0b1c30",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#93000b",
+                    "secondary": "#bb0112",
+                    "inverse-primary": "#bec6e0",
+                    "outline-variant": "#c6c6cd",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-tertiary-container": "#98805d",
+                    "surface-container-highest": "#d3e4fe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Source Serif 4"],
+                    "label-md": ["Public Sans"],
+                    "headline-lg": ["Source Serif 4"],
+                    "display-lg": ["Source Serif 4"],
+                    "body-sm": ["Public Sans"],
+                    "headline-lg-mobile": ["Source Serif 4"],
+                    "body-lg": ["Public Sans"],
+                    "body-md": ["Public Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
         }
-        main {
-            max-width: 1280px; /* Expanded to match container-max in DESIGN.md */
-            margin: 0 auto;
-            padding: 64px 40px;
+        body {
+            background-color: #f8f9ff;
+            color: #0b1c30;
+        }
+        .stark-border {
+            border: 1px solid #0F172A;
+        }
+        .flat-design {
+            border-radius: 0px !important;
+            box-shadow: none !important;
+        }
+        #about-popup.hidden {
+            display: none;
         }
     </style>
 </head>
-<body>
-    <main>
-        <img src="screen.png" alt="CondoSense application screenshot" style="width: 100%; height: auto; border: 1px solid var(--color-outline-variant);">
-    </main>
-</body>
-</html>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-white border-b border-gray-200 w-full fixed top-0 z-50">
+<nav class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="font-headline-md text-headline-md font-bold text-[#0F172A]">CondoSense</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#0F172A] font-label-md text-label-md hover:opacity-70 transition-opacity" href="#compliance">Compliance</a>
+<a class="text-[#0F172A] font-label-md text-label-md hover:opacity-70 transition-opacity" href="#security">Security</a>
+<a class="text-[#0F172A] font-label-md text-label-md hover:opacity-70 transition-opacity" href="#about">About</a>
+</div>
+<a class="border border-[#0F172A] text-[#0F172A] px-6 py-2.5 font-label-md text-label-md hover:bg-[#0F172A] hover:text-white transition-all flat-design" href="#intake">Request Audit</a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">
+                Automated HB 1021 Compliance Discrepancy Auditing for Florida Condominiums.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                We engineer programmatic data auditing tools that parse public corporate filings and county registries to identify statutory compliance risks before enforcement action lands.
+            </p>
+<div class="pt-4">
+<a class="inline-block bg-[#0F172A] text-white px-10 py-5 font-label-md text-label-md hover:bg-black transition-all flat-design" href="#intake">
+                    Request an Association Diagnostic
+                </a>
+</div>
+</div>
+<div class="relative">
+<div class="stark-border bg-white p-2 flat-design">
+<img alt="CondoSense Compliance Report" class="w-full h-auto border border-[#0F172A] flat-design" src="https://lh3.googleusercontent.com/aida/ADBb0uiGDhKn0_W9MYB62-TWN3YGOAS5SZ5DEfUS8f4c5jAiqH4l9XEq9Jr61OkQECTWFbRgzxTznPnhGcHb4h46figumFYmsbSpVPslVSz36xnnfmFtFoReK6ZLbgYT3Vj-dMV9ESGrgDOnsUStyfyB6CB5c4wLFvwELDAO8-YHnbmLuICWVWCAyIf5eyH0GjOcWolaEm27lAcLyPy0juGtMHjKmH17-pgw9e3gbORtjKVRz4md4Zw0eM2iTOo">
+</div>
+</div>
+</section>
+<!-- Core Compliance Problems (4-Grid Section) -->
+<section class="bg-surface-container-low py-24" id="compliance">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary border-l-4 border-secondary pl-6">
+                    Systemic Compliance Intelligence
+                </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#0F172A] stark-border flat-design overflow-hidden">
+<!-- Card 1 -->
+<div class="bg-white hover:bg-surface-container-lowest transition-colors pt-8 pb-12 px-12">
+<img src="disclosure_shield_icon.svg" alt="Disclosure Verification Icon" class="h-12 w-12 object-contain mb-3">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Digital Disclosure Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Programmatic tracking of mandatory public-access portal layers under current DBPR transparency updates. We ensure every required document is not only present but correctly categorized for regulatory scrutiny.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white hover:bg-surface-container-lowest transition-colors pt-8 pb-12 px-12" id="security">
+<img src="sirs_column_icon.svg" alt="SIRS Tracking Icon" class="h-12 w-12 object-contain mb-3">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">SIRS &amp; Milestone Tracking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Cross-referencing public county databases for mandatory Structural Integrity Reserve Studies and Phase 1/2 building inspections. Eliminate the risk of missed deadlines that trigger heavy fines.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white hover:bg-surface-container-lowest transition-colors pt-8 pb-12 px-12">
+<img src="overhead_folder_icon.svg" alt="Administrative Reduction Icon" class="h-12 w-12 object-contain mb-3">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Administrative Overhead Reduction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Minimizing structural board friction by helping associations systematically organize documents to eliminate repeating resident inquiries. Convert administrative chaos into a searchable, compliant digital repository.
+                    </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white hover:bg-surface-container-lowest transition-colors pt-8 pb-12 px-12" id="about-card">
+<img src="fiduciary_scale_icon.svg" alt="Risk Mitigation Icon" class="h-12 w-12 object-contain mb-3">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Fiduciary Risk Mitigation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Providing clear, data-backed diagnostic oversight to keep boards aligned with evolving statutory regulations. Protect board members from personal liability through documented, proactive compliance auditing.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Intake Gateway -->
+<section class="py-24 bg-white" id="intake">
+<div class="max-w-4xl mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Secure Corporate Integration</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    CondoSense works directly with board presidents, management portfolios, and legal teams to verify disclosure integrity. Access is strictly limited by active data processing capacity.
+                </p>
+</div>
+<div class="stark-border p-8 md:p-12 flat-design">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="md:col-span-2 space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="name">Full Name</label>
+<input class="w-full border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-3 px-0 font-body-md transition-colors" id="name" placeholder="e.g. Johnathan Sterling, Esq." type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="association">Association Name / Portfolio</label>
+<input class="w-full border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-3 px-0 font-body-md transition-colors" id="association" placeholder="e.g. Oceanfront Towers Condominium Association" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="email">Corporate Email Address</label>
+<input class="w-full border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-3 px-0 font-body-md transition-colors" id="email" placeholder="e.g. j.sterling@lawfirm.com" type="email">
+</div>
+<div class="md:col-span-2 pt-8">
+<button class="w-full bg-[#0F172A] text-white py-5 font-label-md text-label-md hover:bg-black transition-all flex items-center justify-center gap-2 flat-design" type="submit">
+<span class="">Submit Diagnostic Request</span>
+<span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</button>
+<p class="mt-4 text-center font-body-sm text-body-sm text-on-surface-variant opacity-60">
+                            Protected by enterprise-grade 256-bit encryption.
+                        </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="hidden bg-surface-container border-t border-outline-variant w-full">
+<div class="py-12 px-margin-desktop max-w-container-max mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-headline-md text-headline-md font-bold text-primary">CondoSense</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Regulatory Disclosure</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility</a>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">
+            © 2024 CondoSense. All rights reserved. Institutional Legal Trust and Compliance.
+        </div>
+</div>
+</footer>
+
+<div id="about-popup" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full stark-border flat-design">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="font-headline-md text-headline-md text-primary">About Our Engineering Framework</h2>
+            <button id="close-popup" class="text-primary text-4xl leading-none hover:opacity-70 transition-opacity">&times;</button>
+        </div>
+        <div class="space-y-4">
+            <p class="font-body-md text-body-md text-on-surface-variant">CondoSense was founded by senior technology infrastructure veterans to bring deterministic data intelligence to Florida's shifting regulatory landscape. In an era governed by stringent HB 1021 and Structural Integrity Reserve Study (SIRS) mandates, relying on manual document review or unverified digital portals introduces immense operational and fiduciary risk.</p>
+            <p class="font-body-md text-body-md text-on-surface-variant">We don't build generic property management software. Instead, we develop ai agentic data-auditing tools engineered to inspect public registries, track corporate filings, and systematically index complex condominium declarations and bylaws. By converting vast, unstructured document pools into highly visible, actionable compliance data, CondoSense empowers portfolio managers, legal counsel, and board members to identify disclosure gaps and eliminate administrative strain before enforcement actions occur.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Micro-interaction: Form Focus Logic
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+            const label = input.parentElement.querySelector('label');
+            if(label) label.classList.add('text-secondary');
+        });
+        input.addEventListener('blur', () => {
+            const label = input.parentElement.querySelector('label');
+            if(label) label.classList.remove('text-secondary');
+        });
+    });
+
+    // Prevention of default for landing page mock
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Diagnostic request received. A CondoSense compliance officer will contact your office within 24 business hours.');
+    });
+
+    // About popup logic
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const aboutPopup = document.getElementById('about-popup');
+    const closePopup = document.getElementById('close-popup');
+    const aboutCard = document.getElementById('about-card');
+
+    function showPopup(e) {
+        e.preventDefault();
+        aboutPopup.classList.remove('hidden');
+        aboutPopup.classList.add('flex');
+    }
+
+    function hidePopup() {
+        aboutPopup.classList.add('hidden');
+        aboutPopup.classList.remove('flex');
+    }
+
+    aboutLink.addEventListener('click', showPopup);
+    aboutCard.addEventListener('click', showPopup);
+    closePopup.addEventListener('click', hidePopup);
+
+    aboutPopup.addEventListener('click', (e) => {
+        if (e.target === aboutPopup) {
+            hidePopup();
+        }
+    });
+</script>
+</body></html>
