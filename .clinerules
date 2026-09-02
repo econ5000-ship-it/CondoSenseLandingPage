@@ -1,0 +1,10 @@
+# Environment & Execution Rules
+- **Operating System:** macOS (Darwin / BSD utilities).
+- **Shell Environment:** zsh / bash.
+- **Python Runtime:** Always use `python3` (or the active virtual environment binary), never `python`.
+- **Command Guidelines:**
+  - Avoid GNU-specific flags like `cat -A` or GNU `sed -i`. Use macOS-compatible equivalents (e.g., `cat -e` or `cat -v`).
+  - Run all Python scripts, linters, and modules using `python3` (e.g., `python3 -m ruff check .` or `python3 -m pytest`).
+
+- **Post-Edit Lint:** After making any code changes to Python files, always run `python3 -m ruff check .` to verify no lint errors were introduced. If violations are found, fix them before considering the task complete.
+
