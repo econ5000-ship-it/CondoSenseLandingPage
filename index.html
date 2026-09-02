@@ -230,7 +230,7 @@
 <div class="md:col-span-2 pt-8">
 <button class="w-full bg-[#0F172A] text-white py-5 font-label-md text-label-md hover:bg-black transition-all flex items-center justify-center gap-2 flat-design" type="submit">
 <span class="">Submit Diagnostic Request</span>
-<span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+<span class="material-symbols-outlined" aria-hidden="true" style="font-size: 18px;">arrow_forward</span>
 </button>
 <p class="mt-4 text-center font-body-sm text-body-sm text-on-surface-variant opacity-60">
                             Protected by enterprise-grade 256-bit encryption.
@@ -257,11 +257,11 @@
 </div>
 </footer>
 
-<div id="about-popup" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+<div id="about-popup" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="about-popup-title">
     <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full stark-border flat-design">
         <div class="flex justify-between items-center mb-4">
-            <h2 class="font-headline-md text-headline-md text-primary">About Our Engineering Framework</h2>
-            <button id="close-popup" class="text-primary text-4xl leading-none hover:opacity-70 transition-opacity">&times;</button>
+            <h2 id="about-popup-title" class="font-headline-md text-headline-md text-primary">About Our Engineering Framework</h2>
+            <button id="close-popup" type="button" aria-label="Close" class="text-primary text-4xl leading-none hover:opacity-70 transition-opacity">&times;</button>
         </div>
         <div class="space-y-4">
             <p class="font-body-md text-body-md text-on-surface-variant">CondoSense was founded by senior technology infrastructure veterans to bring deterministic data intelligence to Florida's shifting regulatory landscape. In an era governed by stringent HB 1021 and Structural Integrity Reserve Study (SIRS) mandates, relying on manual document review or unverified digital portals introduces immense operational and fiduciary risk.</p>
