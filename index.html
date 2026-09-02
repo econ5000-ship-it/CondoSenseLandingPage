@@ -271,7 +271,7 @@
 <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility</a>
 </div>
 <div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">
-            © 2024 CondoSense. All rights reserved. Institutional Legal Trust and Compliance.
+            © <span id="copyright-year">2026</span> CondoSense. All rights reserved. Institutional Legal Trust and Compliance.
         </div>
 </div>
 </footer>
@@ -344,6 +344,12 @@
            }
        });
    });
+
+    // Dynamic copyright year (fall back to the hard-coded year in the footer if JS is disabled)
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = new Date().getFullYear();
+     }
 
 </script>
 </body></html>
