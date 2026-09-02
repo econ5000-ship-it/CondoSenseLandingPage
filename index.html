@@ -145,7 +145,7 @@
 <a class="text-[#0F172A] font-label-md text-label-md hover:opacity-70 transition-opacity" href="#security">Security</a>
 <a class="text-[#0F172A] font-label-md text-label-md hover:opacity-70 transition-opacity" href="#about">About</a>
 </div>
-<a class="border border-[#0F172A] text-[#0F172A] px-6 py-2.5 font-label-md text-label-md hover:bg-[#0F172A] hover:text-white transition-all flat-design" href="#intake">Request Audit</a>
+<a class="border border-[#0F172A] text-[#0F172A] px-6 py-2.5 font-label-md text-label-md hover:bg-[#0F172A] hover:text-white transition-all flat-design" data-cta="nav-request-audit" href="#intake">Request Audit</a>
 </nav>
 </header>
 <main class="pt-20">
@@ -159,7 +159,7 @@
                 We engineer programmatic data auditing tools that parse public corporate filings and county registries to identify statutory compliance risks before enforcement action lands.
             </p>
 <div class="pt-4">
-<a class="inline-block bg-[#0F172A] text-white px-10 py-5 font-label-md text-label-md hover:bg-black transition-all flat-design" href="#intake">
+<a class="inline-block bg-[#0F172A] text-white px-10 py-5 font-label-md text-label-md hover:bg-black transition-all flat-design" data-cta="hero-request-diagnostic" href="#intake">
                     Request an Association Diagnostic
                 </a>
 </div>
@@ -238,7 +238,7 @@
 <input class="w-full border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary py-3 px-0 font-body-md transition-colors" id="email" placeholder="e.g. j.sterling@lawfirm.com" type="email">
 </div>
 <div class="md:col-span-2 pt-8">
-<button class="w-full bg-[#0F172A] text-white py-5 font-label-md text-label-md hover:bg-black transition-all flex items-center justify-center gap-2 flat-design" type="submit">
+<button class="w-full bg-[#0F172A] text-white py-5 font-label-md text-label-md hover:bg-black transition-all flex items-center justify-center gap-2 flat-design" data-cta="form-submit-diagnostic" type="submit">
 <span class="">Submit Diagnostic Request</span>
 <span class="material-symbols-outlined" aria-hidden="true" style="font-size: 18px;">arrow_forward</span>
 </button>
@@ -326,5 +326,15 @@
             hidePopup();
         }
     });
+
+    // CTA click instrumentation (privacy-safe, no network calls)
+  document.querySelectorAll('[data-cta]').forEach((el) => {
+      el.addEventListener('click', () => {
+          if (Array.isArray(window.dataLayer)) {
+              window.dataLayer.push({ event: 'cta_click', cta_id: el.dataset.cta });
+           }
+       });
+   });
+
 </script>
 </body></html>
