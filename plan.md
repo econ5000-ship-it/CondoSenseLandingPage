@@ -435,7 +435,7 @@ Requirements & Constraints:
 5. Keep the total diff under 100 lines (this task is ~9 lines of insertion).
 6. Do not modify any other file in the repository.
 
-After editing, run `ruff check --fix` (ignore unsafe fixes) to auto-fix any
+After editing and if python changes occurred, run `ruff check --fix` (ignore unsafe fixes) to auto-fix any
 whitespace/indent/formatting issues — let ruff handle formatting, don't fix
 it by hand.
 ```
