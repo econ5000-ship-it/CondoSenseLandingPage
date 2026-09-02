@@ -215,7 +215,7 @@ page copy available to source metadata from includes:
   `alt="CondoSense Compliance Report"`.
 
 There is no known canonical production URL in the repo; use the placeholder
-`https://www.condosense.com/` for `og:url` (do not fabricate any other
+`https://econ5000-ship-it.github.io/CondoSenseLandingPage/` for `og:url` (do not fabricate any other
 domain).
 
 Requirements & Constraints:
@@ -226,7 +226,7 @@ Requirements & Constraints:
        <meta property="og:title" content="CondoSense | Institutional Compliance Auditing">
        <meta property="og:description" content="Automated HB 1021 compliance discrepancy auditing for Florida condominiums. We parse public corporate filings and county registries to identify statutory compliance risks before enforcement action lands.">
        <meta property="og:type" content="website">
-       <meta property="og:url" content="https://www.condosense.com/">
+       <meta property="og:url" content="https://econ5000-ship-it.github.io/CondoSenseLandingPage/">
        <meta property="og:image" content="https://lh3.googleusercontent.com/aida/ADBb0uiGDhKn0_W9MYB62-TWN3YGOAS5SZ5DEfUS8f4c5jAiqH4l9XEq9Jr61OkQECTWFbRgzxTznPnhGcHb4h46figumFYmsbSpVPslVSz36xnnfmFtFoReK6ZLbgYT3Vj-dMV9ESGrgDOnsUStyfyB6CB5c4wLFvwELDAO8-YHnbmLuICWVWCAyIf5eyH0GjOcWolaEm27lAcLyPy0juGtMHjKmH17-pgw9e3gbORtjKVRz4md4Zw0eM2iTOo">
        <meta name="twitter:card" content="summary_large_image">
        <meta name="twitter:title" content="CondoSense | Institutional Compliance Auditing">
@@ -407,7 +407,7 @@ block today. The only brand facts available in the file are:
   HB 1021 compliance discrepancy auditing for Florida condominiums.
 
 There is no known canonical production URL in the repo; use the same
-placeholder as Task 4, `https://www.condosense.com/`, for the `url` field.
+placeholder as Task 4, `https://econ5000-ship-it.github.io/CondoSenseLandingPage/`, for the `url` field.
 Do not invent a `logo`, `telephone`, `address`, or `sameAs` social profile
 URLs, since none exist anywhere in the current markup — omit those fields
 entirely rather than fabricate them.
@@ -420,7 +420,7 @@ Requirements & Constraints:
          "@context": "https://schema.org",
          "@type": "Organization",
          "name": "CondoSense",
-         "url": "https://www.condosense.com/",
+         "url": "https://econ5000-ship-it.github.io/CondoSenseLandingPage/",
          "description": "Automated HB 1021 compliance discrepancy auditing for Florida condominiums."
        }
        </script>
